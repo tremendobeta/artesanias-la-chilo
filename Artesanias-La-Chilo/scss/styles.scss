@@ -1,0 +1,183 @@
+@font-face {
+    font-family: Lato-Black;
+    src: url(/Fonts/lato/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url(/Fonts/source-sans-pro/SourceSansPro-Regular.otf);
+}
+
+nav{
+    font-family: SourceSansPro-Regular;
+    background-color: #E4A5FF; 
+    width: 100%;
+    & a{
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+    }
+    & ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        justify-content:center;
+    }
+    & li{
+        flex: 1 1 0;
+
+    }
+    & a:hover{
+        color: whitesmoke;
+    }
+
+}
+
+body { 
+    font-family: SourceSansPro-Regular;    
+
+}
+
+.hero_banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(/images/cuatro-hand-painted.png);
+    background-size: 100%;
+    text-align: center;
+    border: 10px solid white;
+    color: white;
+
+    &__title{
+        font-family: Lato-Black;
+        text-align: center;
+        color: white;
+    }
+
+    &__CTA{
+        background-color: #E4A5FF;
+        color: white;
+        border: 10px solid #E4A5FF;
+    }
+}
+
+.about_text{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+
+    &__title{
+        font-family: Lato-Black;
+        color: rgb(64, 64, 64);
+        text-align: center;
+    }
+}
+
+.product_container{
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    "product_1 product_2 product_3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-column-gap: 20px;
+    padding: 30px 30px 60px 30px;
+    width: 100%;
+    background-color: #FFAAC9;
+    text-align: center;
+    align-items: center;
+
+    &__title{
+        font-family: Lato-Black;
+        color: white;
+        text-align: center;
+    }
+}
+
+.product_1{
+    grid-area: product_1;
+    border: 1px solid #fa88b2;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    justify-self: end;
+    padding: 20px;
+    transform: translate(10px, 20px);
+
+}
+
+.product_2{
+    grid-area: product_2;
+    border: 1px solid #fa88b2;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    justify-self: end;
+    padding: 20px;
+}
+
+.product_3{
+    grid-area: product_3;
+    border: 1px solid #fa88b2;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    justify-self: end;
+    padding: 20px;
+}
+
+#form-section{
+    font-family: SourceSansPro-Regular;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding-block: 10px;
+    border: 15px;
+    border: 1px solid #fa88b2;
+}
+
+.form{
+    font-family: SourceSansPro-Regular;
+    width: 600px;
+    &__title{
+        font-family: Lato-Black;
+        color: rgb(64, 64, 64);
+    }
+}
+
+.details{
+    width: 600px;
+    &__title{
+        font-family: Lato-Black;
+        color: rgb(64, 64, 64);
+    }
+    & li{    
+        font-family: SourceSansPro-Regular;
+    }
+}
+
+footer{
+    background-color: #E4A5FF; 
+    width: 100%; 
+    padding-block: 10px; 
+    width: 100%;
+    font-family: SourceSansPro-Regular;
+    color: white;
+
+}
+
+
+/* PALETA
+morado #E4A5FF
+rosado #FFAAC9
+beige #FFCDA8
+beige claro #FFE7CE
+ */
+
